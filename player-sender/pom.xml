@@ -10,10 +10,10 @@
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
   <groupId>com.phoenix</groupId>
-  <artifactId>analytics</artifactId>
+  <artifactId>playersender</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>analytics</name>
-  <description>analytics</description>
+  <name>playersender</name>
+  <description>playersender</description>
   <properties>
     <java.version>17</java.version>
   </properties>
@@ -21,10 +21,6 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.kafka</groupId>
-      <artifactId>kafka-streams</artifactId>
     </dependency>
     <dependency>
       <groupId>org.springframework.kafka</groupId>
@@ -43,25 +39,10 @@
     </dependency>
 
     <dependency>
-      <artifactId>gson</artifactId>
-      <groupId>com.google.code.gson</groupId>
+      <groupId>com.github.javafaker</groupId>
+      <artifactId>javafaker</artifactId>
+      <version>1.0.2</version>
     </dependency>
-
-
-
-
-    <!--Redis-->
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-data-redis</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>redis.clients</groupId>
-      <artifactId>jedis</artifactId>
-      <version>4.4.3</version>
-    </dependency>
-    <!--Redis-->
-
 
 
   </dependencies>
